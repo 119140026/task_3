@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+    <h1 id="judul">Pembelajaran Java Script</h1>
+
+    <p id="isi"></p>
+
+    <button id="klik">Link Tugas</button>
+
+    <h4>Muhammad Asyroful Nur Maulana Yusuf-119140026-RA</h4>
+
+<script>
+    const teks = document.getElementById("judul");
+    teks.innerHTML = "Judul Digantikan JS";
+
+    const element = document.getElementById('isi');
+    const nelement = document.createElement('teks');
+    const neteks = document.createTextNode("Element Digantikan JS");
+    nelement.appendChild(neteks);
+    element.appendChild(nelement);
+
+    const link = document.getElementById('klik');
+    link.addEventListener('click',function(link){
+        link.preventDefault();
+        window.location.href="https://classroom.google.com/u/0/c/NDk3NzQ4MDU2Mjgz/a/NDkxNDIzNTk3NzQx/details";
+    });
+</script>
+
+</body>
+</html>
